@@ -196,11 +196,11 @@ extension ViewController : TinderCardDelegate{
     func currentCardStatus(card: TinderCard, distance: CGFloat) {
         
         if distance == 0 {
-            emojiView.rateValue =  2.5
+            emojiView.rateValue =  5
         }else{
             let value = Float(min(abs(distance/100), 1.0) * 5)
             let sorted = distance > 0  ? 2.5 + (value * 5) / 10  : 2.5 - (value * 5) / 10
-            emojiView.rateValue =  sorted
+            emojiView.rateValue =  5
         }
 
         
