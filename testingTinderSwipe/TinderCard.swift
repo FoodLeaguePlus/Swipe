@@ -6,10 +6,13 @@
 //  Copyright © 2017 Nicky. All rights reserved.
 //
 
-let NAMES = ["Adam Gontier","Matt Walst","Brad Walst","Neil Sanderson","Barry Stock","Nicky Patson"]
+let NAMES = ["Alice Roberts","Kristen Bystrom","Zhi Yuh Ou Yang","Charlene Nicer","Nicholas Chin"]
+let DEPTS = ["Data & Analytics", "Data & Analytics", "Finance & Accounting", "Software Development", "Software Development"]
+let ROLES = ["Senior Optimization Analyst", "Applied Data Scientist", "Financial Analyst", "Software Developer II- IT Integration", "Senior Software Developer- eCommerce Web"]
 let THERESOLD_MARGIN = (UIScreen.main.bounds.size.width/2) * 0.75
 let SCALE_STRENGTH : CGFloat = 4
 let SCALE_RANGE : CGFloat = 0.90
+var count = 0
 
 import UIKit
 
@@ -27,6 +30,7 @@ class TinderCard: UIView {
     var imageViewStatus = UIImageView()
     var overLayImage = UIImageView()
     var isLiked = false
+    
     
     weak var delegate: TinderCardDelegate?
     
@@ -49,7 +53,6 @@ class TinderCard: UIView {
         layer.shadowColor = UIColor.darkGray.cgColor
         clipsToBounds = true
         isUserInteractionEnabled = false
-        
         originalPoint = center
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.beingDragged))
@@ -68,12 +71,24 @@ class TinderCard: UIView {
         profileImageView.clipsToBounds = true
         addSubview(profileImageView)
         
+        
+        
         let labelText = UILabel(frame:CGRect(x: 90, y: frame.size.height - 80, width: frame.size.width - 100, height: 60))
-        let attributedText = NSMutableAttributedString(string: NAMES[Int(arc4random_uniform(UInt32(NAMES.count)))], attributes: [.foregroundColor: UIColor.white,.font:UIFont.boldSystemFont(ofSize: 25)])
-        attributedText.append(NSAttributedString(string: "\n\(value) mins", attributes: [.foregroundColor: UIColor.white,.font:UIFont.systemFont(ofSize: 18)]))
+        let labelTextDept = UILabel(frame:CGRect(x: 90, y: frame.size.height - 55, width: frame.size.width - 100, height: 60))
+        let labelTextRole = UILabel(frame:CGRect(x: 90, y: frame.size.height - 105, width: frame.size.width - 100, height: 60))
+        
+        let attributedText = NSMutableAttributedString(string: NAMES[Int(count)] , attributes: [.foregroundColor: UIColor.white,.font:UIFont.boldSystemFont(ofSize: 25)])
+        let attributedTextRole = NSAttributedString(string: ROLES[Int(count)], attributes: [.foregroundColor: UIColor.white,.font:UIFont.systemFont(ofSize: 15)])
+        let attributedTextDept = NSMutableAttributedString(string: DEPTS[Int(count)], attributes: [.foregroundColor: UIColor.white,.font:UIFont.boldSystemFont(ofSize:16)])
+        count += 1
+        
         labelText.attributedText = attributedText
-        labelText.numberOfLines = 2
+        labelTextDept.attributedText = attributedTextDept
+        labelTextRole.attributedText = attributedTextRole
+        labelText.numberOfLines = 3
         addSubview(labelText)
+        addSubview(labelTextDept)
+        addSubview(labelTextRole)
         
         imageViewStatus = UIImageView(frame: CGRect(x: (frame.size.width / 2) - 37.5, y: 25, width: 75, height: 75))
         imageViewStatus.alpha = 0
