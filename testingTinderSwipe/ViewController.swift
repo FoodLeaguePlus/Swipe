@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         emojiView.rateValue =  emojiView.rateValue + 0.2
         if sender.rateValue >= 5 {
             timer.invalidate()
-            emojiView.rateValue = 2.5
+            emojiView.rateValue = 5.0
         }
     }
     
