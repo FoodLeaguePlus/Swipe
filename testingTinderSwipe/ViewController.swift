@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewTinderBackGround: UIView!
     @IBOutlet weak var buttonUndo: UIButton!
     @IBOutlet weak var viewActions: UIView!
+    @IBOutlet weak var gotoChat: UIButton!
     
     var currentIndex = 0
     var currentLoadedCardsArray = [TinderCard]()
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         viewActions.alpha = 0
         buttonUndo.alpha = 0
+        gotoChat.alpha = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -68,17 +68,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-PX-6kd" userLabel="SwipeView">
                                 <rect key="frame" x="15" y="190" width="345" height="377"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Its Hammer Time!!!!!!!   🏎 😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-ci-xEP">
-                                        <rect key="frame" x="58.5" y="178" width="228.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-ci-xEP">
+                                        <rect key="frame" x="29" y="-0.5" width="287" height="51"/>
+                                        <color key="tintColor" red="0.024959512940000001" green="0.0264042814" blue="0.058917584199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="IT'S A MATCH!">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="43" name=".SFNSDisplay"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" red="0.024959512940000001" green="0.0264042814" blue="0.058917584199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHl-zO-6X1">
+                                        <rect key="frame" x="135" y="151" width="75" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="yesButton"/>
+                                        <state key="highlighted" image="yesButtonSelected"/>
+                                        <connections>
+                                            <action selector="LikeButtonAction:" destination="x1e-70-Zh0" eventType="touchUpInside" id="4Ky-MS-6hL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="hqX-ci-xEP" firstAttribute="centerX" secondItem="Qa3-PX-6kd" secondAttribute="centerX" id="NRj-gI-FqX"/>
-                                    <constraint firstItem="hqX-ci-xEP" firstAttribute="centerY" secondItem="Qa3-PX-6kd" secondAttribute="centerY" id="krA-or-wqc"/>
+                                    <constraint firstItem="hqX-ci-xEP" firstAttribute="centerY" secondItem="Qa3-PX-6kd" secondAttribute="centerY" constant="-163.5" id="krA-or-wqc"/>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBt-rA-k6D" userLabel="BottomNav">
@@ -172,6 +189,7 @@
                     <connections>
                         <outlet property="buttonUndo" destination="i9P-mo-XAh" id="QZK-EO-Wzc"/>
                         <outlet property="emojiView" destination="TQG-5R-WeS" id="pYy-uw-L5J"/>
+                        <outlet property="gotoChat" destination="kHl-zO-6X1" id="XaU-hh-7z9"/>
                         <outlet property="viewActions" destination="wBt-rA-k6D" id="Gu7-ac-xew"/>
                         <outlet property="viewTinderBackGround" destination="Qa3-PX-6kd" id="M8S-Hz-54v"/>
                     </connections>
