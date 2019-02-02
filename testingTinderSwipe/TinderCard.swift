@@ -73,16 +73,295 @@ class TinderCard: UIView {
         profileImageView.clipsToBounds = true
         addSubview(profileImageView)
         
-        let skillTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
-        skillTag.textAlignment = .center
-        skillTag.layer.backgroundColor = UIColor.blue.cgColor
-        skillTag.layer.borderWidth = 2.0
-        skillTag.layer.cornerRadius = 4
-        skillTag.layer.borderWidth = 2
-        
-        let attributedST = NSMutableAttributedString(string: " HI ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.boldSystemFont(ofSize:25),])
-        
-        
+
+
+        // ALICE
+        if (count == 0) {
+            let wantTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            wantTag.textAlignment = .center
+            wantTag.layer.backgroundColor = UIColor.white.cgColor
+            wantTag.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag.layer.borderWidth = 1
+            wantTag.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag.attributedText = attributedST
+            addSubview(wantTag)
+            
+            let wantTag2 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            wantTag2.textAlignment = .center
+            wantTag2.layer.backgroundColor = UIColor.white.cgColor
+            wantTag2.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag2.layer.borderWidth = 1
+            wantTag2.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag2.attributedText = attributedST2
+            addSubview(wantTag2)
+            
+            let haveTag = UILabel(frame:CGRect(x: 220, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            haveTag.textAlignment = .center
+            haveTag.layer.backgroundColor = UIColor.white.cgColor
+            haveTag.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag.layer.borderWidth = 1
+            haveTag.layer.cornerRadius = 4
+            addSubview(haveTag)
+            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag.attributedText = attributedHT
+            addSubview(haveTag)
+            
+            let haveTag2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            haveTag2.textAlignment = .center
+            haveTag2.layer.backgroundColor = UIColor.white.cgColor
+            haveTag2.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag2.layer.borderWidth = 1
+            haveTag2.layer.cornerRadius = 4
+            addSubview(haveTag2)
+            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag2.attributedText = attributedHT2
+            addSubview(haveTag2)
+            
+        }
+        // KRISTEN
+        if (count == 1) {
+            let wantTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            wantTag.textAlignment = .center
+            wantTag.layer.backgroundColor = UIColor.white.cgColor
+            wantTag.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag.layer.borderWidth = 1
+            wantTag.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag.attributedText = attributedST
+            addSubview(wantTag)
+            
+            let wantTag2 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            wantTag2.textAlignment = .center
+            wantTag2.layer.backgroundColor = UIColor.white.cgColor
+            wantTag2.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag2.layer.borderWidth = 1
+            wantTag2.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST2 = NSMutableAttributedString(string: " Public Speaking ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag2.attributedText = attributedST2
+            addSubview(wantTag2)
+            
+            let haveTag = UILabel(frame:CGRect(x: 220, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            haveTag.textAlignment = .center
+            haveTag.layer.backgroundColor = UIColor.white.cgColor
+            haveTag.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag.layer.borderWidth = 1
+            haveTag.layer.cornerRadius = 4
+            addSubview(haveTag)
+            let attributedHT = NSMutableAttributedString(string: " Java ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag.attributedText = attributedHT
+            addSubview(haveTag)
+            
+            let haveTag2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            haveTag2.textAlignment = .center
+            haveTag2.layer.backgroundColor = UIColor.white.cgColor
+            haveTag2.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag2.layer.borderWidth = 1
+            haveTag2.layer.cornerRadius = 4
+            addSubview(haveTag2)
+            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag2.attributedText = attributedHT2
+            addSubview(haveTag2)
+            
+            let haveTag3 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 280, width: frame.size.width - 250, height: 45))
+            haveTag3.textAlignment = .center
+            haveTag3.layer.backgroundColor = UIColor.white.cgColor
+            haveTag3.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag3.layer.borderWidth = 1
+            haveTag3.layer.cornerRadius = 4
+            addSubview(haveTag3)
+            let attributedHT3 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag3.attributedText = attributedHT3
+            addSubview(haveTag3)
+            
+            let haveTag4 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 210, width: frame.size.width - 250, height: 45))
+            haveTag4.textAlignment = .center
+            haveTag4.layer.backgroundColor = UIColor.white.cgColor
+            haveTag4.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag4.layer.borderWidth = 1
+            haveTag4.layer.cornerRadius = 4
+            addSubview(haveTag4)
+            let attributedHT4 = NSMutableAttributedString(string: " Excel ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag4.attributedText = attributedHT4
+            addSubview(haveTag4)
+        }
+        // ZHI YUH
+        if (count == 2) {
+            let wantTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            wantTag.textAlignment = .center
+            wantTag.layer.backgroundColor = UIColor.white.cgColor
+            wantTag.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag.layer.borderWidth = 1
+            wantTag.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag.attributedText = attributedST
+            addSubview(wantTag)
+            
+            let wantTag2 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            wantTag2.textAlignment = .center
+            wantTag2.layer.backgroundColor = UIColor.white.cgColor
+            wantTag2.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag2.layer.borderWidth = 1
+            wantTag2.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag2.attributedText = attributedST2
+            addSubview(wantTag2)
+            
+            let wantTag3 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 280, width: frame.size.width - 250, height: 45))
+            wantTag3.textAlignment = .center
+            wantTag3.layer.backgroundColor = UIColor.white.cgColor
+            wantTag3.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag3.layer.borderWidth = 1
+            wantTag3.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST3 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag3.attributedText = attributedST3
+            addSubview(wantTag3)
+            
+            
+            let haveTag = UILabel(frame:CGRect(x: 220, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            haveTag.textAlignment = .center
+            haveTag.layer.backgroundColor = UIColor.white.cgColor
+            haveTag.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag.layer.borderWidth = 1
+            haveTag.layer.cornerRadius = 4
+            addSubview(haveTag)
+            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag.attributedText = attributedHT
+            addSubview(haveTag)
+            
+            let haveTag2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            haveTag2.textAlignment = .center
+            haveTag2.layer.backgroundColor = UIColor.white.cgColor
+            haveTag2.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag2.layer.borderWidth = 1
+            haveTag2.layer.cornerRadius = 4
+            addSubview(haveTag2)
+            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag2.attributedText = attributedHT2
+            addSubview(haveTag2)
+        }
+        // CHARLENE
+        if (count == 3) {
+            let wantTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            wantTag.textAlignment = .center
+            wantTag.layer.backgroundColor = UIColor.white.cgColor
+            wantTag.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag.layer.borderWidth = 1
+            wantTag.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag.attributedText = attributedST
+            addSubview(wantTag)
+            
+            let wantTag2 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            wantTag2.textAlignment = .center
+            wantTag2.layer.backgroundColor = UIColor.white.cgColor
+            wantTag2.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag2.layer.borderWidth = 1
+            wantTag2.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag2.attributedText = attributedST2
+            addSubview(wantTag2)
+            
+            let haveTag = UILabel(frame:CGRect(x: 220, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            haveTag.textAlignment = .center
+            haveTag.layer.backgroundColor = UIColor.white.cgColor
+            haveTag.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag.layer.borderWidth = 1
+            haveTag.layer.cornerRadius = 4
+            addSubview(haveTag)
+            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag.attributedText = attributedHT
+            addSubview(haveTag)
+            
+            let haveTag2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            haveTag2.textAlignment = .center
+            haveTag2.layer.backgroundColor = UIColor.white.cgColor
+            haveTag2.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag2.layer.borderWidth = 1
+            haveTag2.layer.cornerRadius = 4
+            addSubview(haveTag2)
+            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag2.attributedText = attributedHT2
+            addSubview(haveTag2)
+        }
+        // NICHOLAS
+        if (count == 4) {
+            let wantTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            wantTag.textAlignment = .center
+            wantTag.layer.backgroundColor = UIColor.white.cgColor
+            wantTag.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag.layer.borderWidth = 1
+            wantTag.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag.attributedText = attributedST
+            addSubview(wantTag)
+            
+            let wantTag2 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            wantTag2.textAlignment = .center
+            wantTag2.layer.backgroundColor = UIColor.white.cgColor
+            wantTag2.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag2.layer.borderWidth = 1
+            wantTag2.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag2.attributedText = attributedST2
+            addSubview(wantTag2)
+            
+            let wantTag3 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 280, width: frame.size.width - 250, height: 45))
+            wantTag3.textAlignment = .center
+            wantTag3.layer.backgroundColor = UIColor.white.cgColor
+            wantTag3.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag3.layer.borderWidth = 1
+            wantTag3.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST3 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag3.attributedText = attributedST3
+            addSubview(wantTag3)
+            
+            let wantTag4 = UILabel(frame:CGRect(x: 30, y: frame.size.height - 210, width: frame.size.width - 250, height: 45))
+            wantTag4.textAlignment = .center
+            wantTag4.layer.backgroundColor = UIColor.white.cgColor
+            wantTag4.layer.borderColor = UIColor.lightGray.cgColor
+            wantTag4.layer.borderWidth = 1
+            wantTag4.layer.cornerRadius = 4
+            addSubview(wantTag)
+            let attributedST4 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            wantTag4.attributedText = attributedST4
+            addSubview(wantTag4)
+            
+            let haveTag = UILabel(frame:CGRect(x: 220, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+            haveTag.textAlignment = .center
+            haveTag.layer.backgroundColor = UIColor.white.cgColor
+            haveTag.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag.layer.borderWidth = 1
+            haveTag.layer.cornerRadius = 4
+            addSubview(haveTag)
+            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag.attributedText = attributedHT
+            addSubview(haveTag)
+            
+            let haveTag2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 350, width: frame.size.width - 250, height: 45))
+            haveTag2.textAlignment = .center
+            haveTag2.layer.backgroundColor = UIColor.white.cgColor
+            haveTag2.layer.borderColor = UIColor.lightGray.cgColor
+            haveTag2.layer.borderWidth = 1
+            haveTag2.layer.cornerRadius = 4
+            addSubview(haveTag2)
+            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            haveTag2.attributedText = attributedHT2
+            addSubview(haveTag2)
+        }
         
         let labelText = UILabel(frame:CGRect(x: 90, y: frame.size.height - 80, width: frame.size.width - 100, height: 60))
         let labelTextDept = UILabel(frame:CGRect(x:
@@ -97,13 +376,11 @@ class TinderCard: UIView {
         labelText.attributedText = attributedText
         labelTextDept.attributedText = attributedTextDept
         labelTextRole.attributedText = attributedTextRole
-        skillTag.attributedText = attributedST
         
         labelText.numberOfLines = 3
         addSubview(labelText)
         addSubview(labelTextDept)
         addSubview(labelTextRole)
-        addSubview(skillTag)
         
         imageViewStatus = UIImageView(frame: CGRect(x: (frame.size.width / 2) - 37.5, y: 25, width: 75, height: 75))
         imageViewStatus.alpha = 0
