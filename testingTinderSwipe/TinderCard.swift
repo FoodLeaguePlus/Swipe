@@ -74,6 +74,27 @@ class TinderCard: UIView {
         addSubview(profileImageView)
         
 
+        let header = UILabel(frame:CGRect(x: 30, y: frame.size.height - 500, width: frame.size.width - 250, height: 45))
+        header.textAlignment = .center
+        header.layer.backgroundColor = UIColor.clear.cgColor
+        header.layer.borderColor = UIColor.white.cgColor
+        header.layer.borderWidth = 1
+        header.layer.cornerRadius = 4
+        addSubview(header)
+        let attributedHeader = NSMutableAttributedString(string: " WANTS ", attributes: [.foregroundColor: UIColor.darkText,.font:UIFont.boldSystemFont(ofSize:20),])
+        header.attributedText = attributedHeader
+        addSubview(header)
+        
+        let header2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 500, width: frame.size.width - 250, height: 45))
+        header2.textAlignment = .center
+        header2.layer.backgroundColor = UIColor.clear.cgColor
+        header2.layer.borderColor = UIColor.white.cgColor
+        header2.layer.borderWidth = 1
+        header2.layer.cornerRadius = 4
+        addSubview(header)
+        let attributedHeader2 = NSMutableAttributedString(string: " HAVES ", attributes: [.foregroundColor: UIColor.darkText,.font:UIFont.boldSystemFont(ofSize:20),])
+        header2.attributedText = attributedHeader2
+        addSubview(header2)
 
         // ALICE
         if (count == 0) {
