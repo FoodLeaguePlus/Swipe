@@ -59,7 +59,7 @@ class TinderCard: UIView {
         addGestureRecognizer(panGestureRecognizer)
         
         let backGroundImageView = UIImageView(frame:bounds)
-        backGroundImageView.image = UIImage(named:String(Int(1 + arc4random() % (8 - 1))))
+        backGroundImageView.image = UIImage(named:String(Int(1 + count % (8 - 1))))
         backGroundImageView.contentMode = .scaleAspectFill
         backGroundImageView.clipsToBounds = true;
         addSubview(backGroundImageView)
