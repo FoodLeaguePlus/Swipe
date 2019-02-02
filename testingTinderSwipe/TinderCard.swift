@@ -8,13 +8,15 @@
 
 let NAMES = ["Alice Roberts","Kristen Bystrom","Zhi Yuh Ou Yang","Charlene Nicer","Nicholas Chin"]
 let DEPTS = ["Data & Analytics", "Data & Analytics", "Finance & Accounting", "Software Development", "Software Development"]
-let ROLES = ["Senior Optimization Analyst", "Applied Data Scientist", "Financial Analyst", "Software Developer II- IT Integration", "Senior Software Developer- eCommerce Web"]
+let ROLES = ["Senior Optimization Analyst", "Applied Data Scientist", "Financial Analyst", "Software Developer II - IT Integration", "Senior Software Developer - eCommerce Web"]
 let THERESOLD_MARGIN = (UIScreen.main.bounds.size.width/2) * 0.75
 let SCALE_STRENGTH : CGFloat = 4
 let SCALE_RANGE : CGFloat = 0.90
 var count = 0
 
+
 import UIKit
+
 
 protocol TinderCardDelegate: NSObjectProtocol {
     func cardGoesLeft(card: TinderCard)
@@ -59,7 +61,7 @@ class TinderCard: UIView {
         addGestureRecognizer(panGestureRecognizer)
         
         let backGroundImageView = UIImageView(frame:bounds)
-        backGroundImageView.image = UIImage(named:String(Int(1 + arc4random() % (8 - 1))))
+        backGroundImageView.image = UIImage(named:String(Int(1 + count % (8 - 1))))
         backGroundImageView.contentMode = .scaleAspectFill
         backGroundImageView.clipsToBounds = true;
         addSubview(backGroundImageView)
@@ -71,10 +73,20 @@ class TinderCard: UIView {
         profileImageView.clipsToBounds = true
         addSubview(profileImageView)
         
+        let skillTag = UILabel(frame:CGRect(x: 30, y: frame.size.height - 420, width: frame.size.width - 250, height: 45))
+        skillTag.textAlignment = .center
+        skillTag.layer.backgroundColor = UIColor.blue.cgColor
+        skillTag.layer.borderWidth = 2.0
+        skillTag.layer.cornerRadius = 4
+        skillTag.layer.borderWidth = 2
+        
+        let attributedST = NSMutableAttributedString(string: " HI ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.boldSystemFont(ofSize:25),])
+        
         
         
         let labelText = UILabel(frame:CGRect(x: 90, y: frame.size.height - 80, width: frame.size.width - 100, height: 60))
-        let labelTextDept = UILabel(frame:CGRect(x: 90, y: frame.size.height - 55, width: frame.size.width - 100, height: 60))
+        let labelTextDept = UILabel(frame:CGRect(x:
+            90, y: frame.size.height - 55, width: frame.size.width - 100, height: 60))
         let labelTextRole = UILabel(frame:CGRect(x: 90, y: frame.size.height - 105, width: frame.size.width - 100, height: 60))
         
         let attributedText = NSMutableAttributedString(string: NAMES[Int(count)] , attributes: [.foregroundColor: UIColor.white,.font:UIFont.boldSystemFont(ofSize: 25)])
@@ -85,10 +97,13 @@ class TinderCard: UIView {
         labelText.attributedText = attributedText
         labelTextDept.attributedText = attributedTextDept
         labelTextRole.attributedText = attributedTextRole
+        skillTag.attributedText = attributedST
+        
         labelText.numberOfLines = 3
         addSubview(labelText)
         addSubview(labelTextDept)
         addSubview(labelTextRole)
+        addSubview(skillTag)
         
         imageViewStatus = UIImageView(frame: CGRect(x: (frame.size.width / 2) - 37.5, y: 25, width: 75, height: 75))
         imageViewStatus.alpha = 0
