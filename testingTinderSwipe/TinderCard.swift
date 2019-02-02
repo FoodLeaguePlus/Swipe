@@ -76,7 +76,7 @@ class TinderCard: UIView {
 
         let header = UILabel(frame:CGRect(x: 30, y: frame.size.height - 500, width: frame.size.width - 250, height: 45))
         header.textAlignment = .center
-        header.layer.backgroundColor = UIColor.clear.cgColor
+        header.layer.backgroundColor = UIColor.orange.cgColor
         header.layer.borderColor = UIColor.white.cgColor
         header.layer.borderWidth = 1
         header.layer.cornerRadius = 4
@@ -87,12 +87,12 @@ class TinderCard: UIView {
         
         let header2 = UILabel(frame:CGRect(x: 220, y: frame.size.height - 500, width: frame.size.width - 250, height: 45))
         header2.textAlignment = .center
-        header2.layer.backgroundColor = UIColor.clear.cgColor
+        header2.layer.backgroundColor = UIColor.orange.cgColor
         header2.layer.borderColor = UIColor.white.cgColor
         header2.layer.borderWidth = 1
         header2.layer.cornerRadius = 4
         addSubview(header)
-        let attributedHeader2 = NSMutableAttributedString(string: " HAVES ", attributes: [.foregroundColor: UIColor.darkText,.font:UIFont.boldSystemFont(ofSize:20),])
+        let attributedHeader2 = NSMutableAttributedString(string: " HAS ", attributes: [.foregroundColor: UIColor.darkText,.font:UIFont.boldSystemFont(ofSize:20),])
         header2.attributedText = attributedHeader2
         addSubview(header2)
 
@@ -105,7 +105,7 @@ class TinderCard: UIView {
             wantTag.layer.borderWidth = 1
             wantTag.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag.attributedText = attributedST
             addSubview(wantTag)
             
@@ -127,7 +127,7 @@ class TinderCard: UIView {
             haveTag.layer.borderWidth = 1
             haveTag.layer.cornerRadius = 4
             addSubview(haveTag)
-            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT = NSMutableAttributedString(string: " Java ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag.attributedText = attributedHT
             addSubview(haveTag)
             
@@ -138,7 +138,7 @@ class TinderCard: UIView {
             haveTag2.layer.borderWidth = 1
             haveTag2.layer.cornerRadius = 4
             addSubview(haveTag2)
-            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT2 = NSMutableAttributedString(string: " Public Speaking ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag2.attributedText = attributedHT2
             addSubview(haveTag2)
             
@@ -152,7 +152,7 @@ class TinderCard: UIView {
             wantTag.layer.borderWidth = 1
             wantTag.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag.attributedText = attributedST
             addSubview(wantTag)
             
@@ -163,7 +163,7 @@ class TinderCard: UIView {
             wantTag2.layer.borderWidth = 1
             wantTag2.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST2 = NSMutableAttributedString(string: " Public Speaking ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST2 = NSMutableAttributedString(string: " Java ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag2.attributedText = attributedST2
             addSubview(wantTag2)
             
@@ -174,7 +174,7 @@ class TinderCard: UIView {
             haveTag.layer.borderWidth = 1
             haveTag.layer.cornerRadius = 4
             addSubview(haveTag)
-            let attributedHT = NSMutableAttributedString(string: " Java ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag.attributedText = attributedHT
             addSubview(haveTag)
             
@@ -185,7 +185,7 @@ class TinderCard: UIView {
             haveTag2.layer.borderWidth = 1
             haveTag2.layer.cornerRadius = 4
             addSubview(haveTag2)
-            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT2 = NSMutableAttributedString(string: " Public Speaking ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag2.attributedText = attributedHT2
             addSubview(haveTag2)
             
@@ -196,7 +196,7 @@ class TinderCard: UIView {
             haveTag3.layer.borderWidth = 1
             haveTag3.layer.cornerRadius = 4
             addSubview(haveTag3)
-            let attributedHT3 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT3 = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag3.attributedText = attributedHT3
             addSubview(haveTag3)
             
@@ -220,7 +220,7 @@ class TinderCard: UIView {
             wantTag.layer.borderWidth = 1
             wantTag.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST = NSMutableAttributedString(string: " Java ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag.attributedText = attributedST
             addSubview(wantTag)
             
@@ -231,7 +231,7 @@ class TinderCard: UIView {
             wantTag2.layer.borderWidth = 1
             wantTag2.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST2 = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag2.attributedText = attributedST2
             addSubview(wantTag2)
             
@@ -242,7 +242,7 @@ class TinderCard: UIView {
             wantTag3.layer.borderWidth = 1
             wantTag3.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST3 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST3 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag3.attributedText = attributedST3
             addSubview(wantTag3)
             
@@ -254,7 +254,7 @@ class TinderCard: UIView {
             haveTag.layer.borderWidth = 1
             haveTag.layer.cornerRadius = 4
             addSubview(haveTag)
-            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT = NSMutableAttributedString(string: " Excel ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag.attributedText = attributedHT
             addSubview(haveTag)
             
@@ -265,7 +265,7 @@ class TinderCard: UIView {
             haveTag2.layer.borderWidth = 1
             haveTag2.layer.cornerRadius = 4
             addSubview(haveTag2)
-            let attributedHT2 = NSMutableAttributedString(string: " Python ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT2 = NSMutableAttributedString(string: " R ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag2.attributedText = attributedHT2
             addSubview(haveTag2)
         }
@@ -278,7 +278,7 @@ class TinderCard: UIView {
             wantTag.layer.borderWidth = 1
             wantTag.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST = NSMutableAttributedString(string: " Javascript ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag.attributedText = attributedST
             addSubview(wantTag)
             
@@ -289,7 +289,7 @@ class TinderCard: UIView {
             wantTag2.layer.borderWidth = 1
             wantTag2.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST2 = NSMutableAttributedString(string: " Public Speaking ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag2.attributedText = attributedST2
             addSubview(wantTag2)
             
@@ -300,7 +300,7 @@ class TinderCard: UIView {
             haveTag.layer.borderWidth = 1
             haveTag.layer.cornerRadius = 4
             addSubview(haveTag)
-            let attributedHT = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedHT = NSMutableAttributedString(string: " Machine Learning ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             haveTag.attributedText = attributedHT
             addSubview(haveTag)
             
@@ -324,7 +324,7 @@ class TinderCard: UIView {
             wantTag.layer.borderWidth = 1
             wantTag.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST = NSMutableAttributedString(string: " Javascript ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag.attributedText = attributedST
             addSubview(wantTag)
             
@@ -335,7 +335,7 @@ class TinderCard: UIView {
             wantTag2.layer.borderWidth = 1
             wantTag2.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST2 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST2 = NSMutableAttributedString(string: " React ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag2.attributedText = attributedST2
             addSubview(wantTag2)
             
@@ -346,7 +346,7 @@ class TinderCard: UIView {
             wantTag3.layer.borderWidth = 1
             wantTag3.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST3 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST3 = NSMutableAttributedString(string: " Agile ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag3.attributedText = attributedST3
             addSubview(wantTag3)
             
@@ -357,7 +357,7 @@ class TinderCard: UIView {
             wantTag4.layer.borderWidth = 1
             wantTag4.layer.cornerRadius = 4
             addSubview(wantTag)
-            let attributedST4 = NSMutableAttributedString(string: " C++ ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
+            let attributedST4 = NSMutableAttributedString(string: " Java ", attributes: [.foregroundColor: UIColor.black,.font:UIFont.systemFont(ofSize:20),])
             wantTag4.attributedText = attributedST4
             addSubview(wantTag4)
             
