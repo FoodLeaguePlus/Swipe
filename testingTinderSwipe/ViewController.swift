@@ -12,6 +12,8 @@ let  TOPYAXIS = 75;
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var emojiView: EmojiRateView!
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
     var allCardsArray = [TinderCard]()
     var valueArray = ["1","2","3","4","5"]
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         viewActions.alpha = 0
@@ -60,8 +63,10 @@ class ViewController: UIViewController {
                 }
             }
             
+            
             for (i,_) in currentLoadedCardsArray.enumerated() {
                 if i > 0 {
+                    var imageViewStatus = UIImageView()
                     viewTinderBackGround.insertSubview(currentLoadedCardsArray[i], belowSubview: currentLoadedCardsArray[i - 1])
                 }else {
                     viewTinderBackGround.addSubview(currentLoadedCardsArray[i])
