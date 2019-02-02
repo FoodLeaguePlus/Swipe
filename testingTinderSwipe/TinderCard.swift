@@ -5,7 +5,7 @@
 //  Created by Nicky on 11/16/17.
 //  Copyright © 2017 Nicky. All rights reserved.
 //
-
+let PHOTOS = ["photo1","photo2", "photo3", "photo4", "photo5"]
 let NAMES = ["Alice Roberts","Kristen Bystrom","Zhi Yuh Ou Yang","Charlene Nicer","Nicholas Chin"]
 let DEPTS = ["Data & Analytics", "Data & Analytics", "Finance & Accounting", "Software Development", "Software Development"]
 let ROLES = ["Senior Optimization Analyst", "Applied Data Scientist", "Financial Analyst", "Software Developer II - IT Integration", "Senior Software Developer - eCommerce Web"]
@@ -67,7 +67,7 @@ class TinderCard: UIView {
         addSubview(backGroundImageView)
         
         let profileImageView = UIImageView(frame:CGRect(x: 20, y: frame.size.height - 80, width: 60, height: 60))
-        profileImageView.image = UIImage(named:"profileimage1")
+        profileImageView.image = UIImage(named:PHOTOS[count])
         profileImageView.contentMode = .scaleAspectFill
         profileImageView.layer.cornerRadius = 25
         profileImageView.clipsToBounds = true
