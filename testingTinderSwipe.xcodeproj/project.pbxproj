@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A3FBA7A2179E07E00D52F73 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3FBA792179E07E00D52F73 /* GradientView.swift */; };
 		A61449B922060D5C00979348 /* directMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61449B822060D5C00979348 /* directMessage.swift */; };
+		A61449BC22064BFE00979348 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61449BB22064BFE00979348 /* Message.swift */; };
+		A61449C322064DC400979348 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61449C122064DC400979348 /* CustomMessageCell.swift */; };
+		A61449C422064DC400979348 /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61449C222064DC400979348 /* CustomMessageCell.xib */; };
 		E19A4F5720B9915D00D2BE9E /* Tinder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19A4F5520B9915D00D2BE9E /* Tinder.storyboard */; };
 		E1B2075B2014956500E0A3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B2075A2014956400E0A3A2 /* Assets.xcassets */; };
 		E1B3FCA01FBDA0FD0038ADF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3FC9F1FBDA0FD0038ADF9 /* AppDelegate.swift */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		0A3FBA792179E07E00D52F73 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A61449B822060D5C00979348 /* directMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = directMessage.swift; sourceTree = "<group>"; };
+		A61449BB22064BFE00979348 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A61449C122064DC400979348 /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		A61449C222064DC400979348 /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 		E19A4F5620B9915D00D2BE9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tinder.storyboard; sourceTree = "<group>"; };
 		E1B2075A2014956400E0A3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1B3FC9C1FBDA0FD0038ADF9 /* testingTinderSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testingTinderSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,9 +55,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61449BA22064BE700979348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A61449BB22064BFE00979348 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A61449BE22064C4100979348 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A61449C122064DC400979348 /* CustomMessageCell.swift */,
+				A61449C222064DC400979348 /* CustomMessageCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		E1B3FC931FBDA0FD0038ADF9 = {
 			isa = PBXGroup;
 			children = (
+				A61449BE22064C4100979348 /* Custom Cell */,
+				A61449BA22064BE700979348 /* Model */,
 				E1B3FC9E1FBDA0FD0038ADF9 /* testingTinderSwipe */,
 				E1B3FC9D1FBDA0FD0038ADF9 /* Products */,
 			);
@@ -145,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1E7C59221AD6846003E0E63 /* Screen Shot .png in Resources */,
+				A61449C422064DC400979348 /* CustomMessageCell.xib in Resources */,
 				E1E7C59921AD7484003E0E63 /* Screen Shot DIislike.png in Resources */,
 				E1B3FCAA1FBDA0FD0038ADF9 /* LaunchScreen.storyboard in Resources */,
 				E19A4F5720B9915D00D2BE9E /* Tinder.storyboard in Resources */,
@@ -162,10 +188,12 @@
 			files = (
 				E1B3FCA21FBDA0FD0038ADF9 /* ViewController.swift in Sources */,
 				E1D0EE4C20BA7A07008E0A09 /* EmojiRateView.swift in Sources */,
+				A61449C322064DC400979348 /* CustomMessageCell.swift in Sources */,
 				A61449B922060D5C00979348 /* directMessage.swift in Sources */,
 				0A3FBA7A2179E07E00D52F73 /* GradientView.swift in Sources */,
 				E1B3FCA01FBDA0FD0038ADF9 /* AppDelegate.swift in Sources */,
 				E1B3FCB41FBDA13D0038ADF9 /* TinderCard.swift in Sources */,
+				A61449BC22064BFE00979348 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
