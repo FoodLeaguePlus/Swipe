@@ -20,9 +20,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewTinderBackGround: UIView!
     @IBOutlet weak var buttonUndo: UIButton!
     @IBOutlet weak var viewActions: UIView!
-    @IBOutlet weak var label3: UILabel!
     
-
+    @IBAction func onGo(_ sender: Any) {
+        performSegue(withIdentifier: "bizhacks", sender: self)
+    }
     
     var currentIndex = 0
     var currentLoadedCardsArray = [TinderCard]()
@@ -34,15 +35,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         viewActions.alpha = 0
         buttonUndo.alpha = 0
-        
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         view.layoutIfNeeded()
         loadCardValues()
-        label3.layer.borderWidth = 2.0
-        label3.layer.cornerRadius = 8
     }
     
     @objc func animateEmojiView(timer : Timer){

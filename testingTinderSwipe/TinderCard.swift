@@ -5,10 +5,10 @@
 //  Created by Nicky on 11/16/17.
 //  Copyright © 2017 Nicky. All rights reserved.
 //
-let PHOTOS = ["photo1","photo2", "photo3", "photo4", "photo5"]
-let NAMES = ["Alice Roberts","Kristen Bystrom","Zhi Yuh Ou Yang","Charlene Nicer","Nicholas Chin"]
-let DEPTS = ["Data & Analytics", "Data & Analytics", "Finance & Accounting", "Software Development", "Software Development"]
-let ROLES = ["Senior Optimization Analyst", "Applied Data Scientist", "Financial Analyst", "Software Developer II - IT Integration", "Senior Software Developer - eCommerce Web"]
+let PHOTOS = ["photo1","photo2", "photo3", "photo4", "photo5", "photo5"]
+let NAMES = ["Alice Roberts","Kristen Bystrom","Zhi Yuh Ou Yang","Charlene Nicer","Nicholas Chin", "Nicholas Chin"]
+let DEPTS = ["Data & Analytics", "Data & Analytics", "Finance & Accounting", "Software Development", "Software Development", "Software Development"]
+let ROLES = ["Senior Optimization Analyst", "Applied Data Scientist", "Financial Analyst", "Software Developer II - IT Integration", "Senior Software Developer - eCommerce Web", "Senior Software Developer - eCommerce Web"]
 let THERESOLD_MARGIN = (UIScreen.main.bounds.size.width/2) * 0.75
 let SCALE_STRENGTH : CGFloat = 4
 let SCALE_RANGE : CGFloat = 0.90
